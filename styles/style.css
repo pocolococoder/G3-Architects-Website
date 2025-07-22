@@ -44,8 +44,7 @@
 }
 
 .section-title{
-    font-size: 2.5rem;
-    font-weight: 700;
+    
 }
 
 main{
@@ -112,8 +111,8 @@ font-weight: 700;
 }
 .banner-description{
     color: rgb(114, 114, 114);
-font-family: Work Sans;
-font-size: 16px;
+font-family: "Work Sans";
+font-size: 1rem;
 font-weight: 400;
 margin-top: 25px;
 }
@@ -143,6 +142,10 @@ margin-top: 25px;
 
 #quick-list{
     font-weight: 500;
+}
+.feature-title{
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 /* Facts section style */
@@ -191,6 +194,32 @@ margin:0;
     font-weight: 700;
 }
 
+/* Sponsor related style */
+
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.sponsor-description{
+    color: rgb(114, 114, 114);
+font-family: "Work Sans";
+font-size: 1rem;
+font-weight: 400;
+}
+
+.sponsor-companies{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;justify-items: center;
+}
+.sponsor-companies img{
+        filter: grayscale(100%);
+    }
 
 
 /* Responsive media query */
@@ -218,6 +247,17 @@ margin:0;
     .fact-description{
         margin: 2.5rem;
     }
+    .sponsor-companies{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 50px;
+    }
+    .sponsor-description{
+        font-size: 1.5rem;
+       padding: 20px;
+       margin:0;
+    }
+    
 }
 
 
@@ -227,5 +267,10 @@ margin:0;
     }
     .our-features{
         margin-left: 3.50rem;
+    }
+    .sponsor-companies, .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }
